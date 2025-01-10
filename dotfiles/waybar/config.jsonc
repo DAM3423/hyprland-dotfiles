@@ -1,7 +1,7 @@
 {
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
-  "modules-right": ["network", "pulseaudio", "battery", "clock", "custom/weather"],
+  "modules-right": ["custom/keyboard", "network", "pulseaudio", "battery", "clock", "custom/weather"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -39,8 +39,12 @@
   "custom/weather": {
       "exec": "${HOME}/.config/waybar/get_weather.sh Manchester+UK",
       "return-type": "json",
-      "format": "",
+      "format": "{}",
       "tooltip": true,
       "interval": 3600
+  },
+  "custom/keyboard": {
+      "on-click": "${HOME}/.config/waybar/launch_keyboard.sh",
+      "format": "",
   }
 }
