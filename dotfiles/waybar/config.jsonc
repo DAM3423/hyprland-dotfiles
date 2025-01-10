@@ -39,7 +39,7 @@
   "custom/weather": {
       "exec": "${HOME}/.config/waybar/get_weather.sh Manchester+UK",
       "return-type": "json",
-      "format": "{}",
+      "format": "",
       "tooltip": true,
       "interval": 3600
   }
